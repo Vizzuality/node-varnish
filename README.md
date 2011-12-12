@@ -1,7 +1,7 @@
 node-varnish
 ==
 
-A node.js implementation of the [Varnish telnet management protocol](https://www.varnish-cache.org/trac/wiki/ManagementPort)
+A node.js connector to Varnish using the [Varnish telnet management protocol](https://www.varnish-cache.org/trac/wiki/ManagementPort).
 
 ```javascript
 var client = new varnish.VarnishClient('127.0.0.1', MANAGEMENT_PORT);
