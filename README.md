@@ -15,11 +15,11 @@ For more usage examples, see the tests.
 Dependencies
 --
 
-* node.js >=4.x
-* varnish >=2.x
+* [node.js](http://nodejs.org/) >=4.x
+* [varnish](https://www.varnish-cache.org/) >=2.x
 
 Contributors
 --
 
-* Javi Santana - core code base (@javisantana)
-* Simon Tokumine - packaging and docs (@tokumin)
+* [Javi Santana](https://github.com/javisantana/) - core code base
+* [Simon Tokumine](https://github.com/tokumine/) - packaging and docs
