@@ -1,0 +1,1 @@
+* expose VarnishQueue options
