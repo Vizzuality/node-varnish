@@ -21,5 +21,5 @@ Dependencies
 Contributors
 --
 
-* [Javi Santana](https://github.com/javisantana/) - core code base
-* [Simon Tokumine](https://github.com/tokumine/) - packaging and docs
+* [Javi Santana](https://github.com/javisantana/)
+* [Simon Tokumine](https://github.com/tokumine/)
