@@ -21,5 +21,5 @@ Dependencies
 Contributors
 --
 
-* Javier Santana - core code base (@javisantana)
-* Simon Tokumine - packaging and docs (@tokumine)
+* Javi Santana - core code base (@javisantana)
+* Simon Tokumine - packaging and docs (@tokumin)
