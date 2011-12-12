@@ -1,0 +1,24 @@
+{
+    "name": "node-varnish",
+    "version": "0.1.0",
+    "main": "./lib/node-varnish/index.js",
+    "description": "A node.js connector to Varnish using the Varnish telnet management protocol",
+    "url": "https://github.com/Vizzuality/node-varnish",
+    "licenses": [{ "type": "BSD" }],
+    "repositories": [{
+        "type": "git",
+        "url": "git://github.com/Vizzuality/node-varnish.git"
+    }],
+    "author": {
+      "name": "Javier Santana, Simon Tokumine, Vizzuality",
+      "url": "http://vizzuality.com",
+      "email": "jsantana@vizzuality.com"
+    },
+    "devDependencies": {
+        "expresso": "0.8.x"
+    },
+    "scripts": {
+        "test": "which expresso | sh"
+    }
+}
+
