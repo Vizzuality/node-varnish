@@ -10,7 +10,7 @@ client.on('ready', function() {
 });
 ```
 
-For more usage examples, see the tests.
+For more usage examples, see the [tests](https://github.com/Vizzuality/node-varnish/blob/master/test/acceptance/varnish.js).
 
 Dependencies
 --
