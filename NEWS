@@ -1,7 +1,10 @@
 Versions 0.1.1
 2012-07-??
 
- - ...
+ - Fix global variable leaks
+ - Testsuite enhancements
+   - Tests ported to mocha
+   - Run on "make check"
 
 Versions 0.1.0
 2011-12-12
