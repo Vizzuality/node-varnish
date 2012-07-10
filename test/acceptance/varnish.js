@@ -8,7 +8,7 @@ suite('varnish', function() {
 
     test('should connect', function(done) {
         var ok = false;
-        var server = VarnishEmu();
+        var server = new VarnishEmu();
         server.on('listening', function() {
             var client = new varnish.VarnishClient('127.0.0.1', server.address().port);
             client.on('connect', function() {
@@ -23,7 +23,7 @@ suite('varnish', function() {
     
     test('should send a command', function(done) {
         var ok = false;
-        var server = VarnishEmu(function() {
+        var server = new VarnishEmu(function() {
             ok = true;
         });
         server.on('listening', function() {
@@ -37,7 +37,7 @@ suite('varnish', function() {
     
     test('should emit close on server disconect', function(done) {
         var ok = false;
-        var server = VarnishEmu();
+        var server = new VarnishEmu();
         server.on('listening', function() {
             var client = new varnish.VarnishClient('127.0.0.1', server.address().port);
             client.on('ready', function() {
@@ -51,7 +51,7 @@ suite('varnish', function() {
     
     test('should emit response on command', function(done) {
         var ok = false;
-        var server = VarnishEmu()
+        var server = new VarnishEmu()
         server.on('listening', function() {
             var client = new varnish.VarnishClient('127.0.0.1', server.address().port);
             client.on('ready', function() {
@@ -67,7 +67,7 @@ suite('varnish', function() {
     
     test('should emit error when the user tries to send when thereis a pending command', function(done) {
         var ok = false;
-        var server = VarnishEmu()
+        var server = new VarnishEmu()
         server.on('listening', function() {
             var client = new varnish.VarnishClient('127.0.0.1', server.address().port);
             client.on('ready', function() {
@@ -88,7 +88,7 @@ suite('varnish', function() {
     //
     
     test('should send command', function(done) {
-        var server = VarnishEmu()
+        var server = new VarnishEmu()
         server.on('listening', function() {
             var queue = new varnish.VarnishQueue('127.0.0.1', server.address().port);
             for(var i = 0; i < 5; ++i) {
@@ -105,7 +105,7 @@ suite('varnish', function() {
             queue.run_cmd('purge simon_is == the_best');
         }
         // then server
-        var server = VarnishEmu(null, 1234)
+        var server = new VarnishEmu(null, 1234)
         //wait 2 seconds because the client tries every second the reconnection
         setTimeout(function() { assert.equal(10, server.commands); done(); }, 2000);
     });
