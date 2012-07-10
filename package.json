@@ -15,10 +15,10 @@
       "email": "jsantana@vizzuality.com"
     },
     "devDependencies": {
-        "expresso": "0.8.x"
+        "mocha": "1.2.1"
     },
     "scripts": {
-        "test": "expresso test/acceptance/varnish.js"
+        "test": "mocha -u tdd test/acceptance/varnish.js"
     }
 }
 
