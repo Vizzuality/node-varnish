@@ -18,7 +18,7 @@
         "expresso": "0.8.x"
     },
     "scripts": {
-        "test": "which expresso | sh"
+        "test": "expresso test/acceptance/varnish.js"
     }
 }
 
