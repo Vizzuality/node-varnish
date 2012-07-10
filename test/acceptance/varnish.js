@@ -22,17 +22,17 @@ suite('varnish', function() {
     });
     
     test('should send a command', function(done) {
-        var ok = false;
-        var server = new VarnishEmu(function() {
-            ok = true;
+        var command_to_send = 'a command';
+        var server = new VarnishEmu(function(cmd) {
+            assert.equal(cmd, command_to_send + '\n');
+            done();
         });
         server.on('listening', function() {
             var client = new varnish.VarnishClient('127.0.0.1', server.address().port);
             client.on('ready', function() {
-                client.run_cmd('purge obj.http.X == test', function(){});
+                client.run_cmd(command_to_send);
             });
         });
-        setTimeout(function() { assert.ok(ok); done(); }, 100);
     });
     
     test('should emit close on server disconect', function(done) {
