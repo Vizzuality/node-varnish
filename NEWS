@@ -1,7 +1,9 @@
 Versions 0.1.2
-2012-??-??
-
- - ...
+2014-01-28
+ - Added support for authentication
+ - Fix EventEmitter inheritance
+ - Logging is now optional: client.debug = true;
+ - "ready_callback" now gets 2 params: err and clientInstance
 
 Versions 0.1.1
 2012-07-10

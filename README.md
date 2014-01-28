@@ -6,7 +6,7 @@ A node.js connector to Varnish using the [Varnish telnet management protocol](ht
 ```javascript
 var Varnish = require('node-varnish');
 
-var client = new Varnish.VarnishClient('127.0.0.1', MANAGEMENT_PORT);
+var client = new Varnish.VarnishClient('127.0.0.1', MANAGEMENT_PORT[, secret]);
 client.on('ready', function() {
     client.run_cmd('purge obj.http.X == test', function(){});
 });
@@ -31,3 +31,4 @@ Contributors
 
 * [Javi Santana](https://github.com/javisantana/)
 * [Simon Tokumine](https://github.com/tokumine/)
+* [Tiago Relvao](https://github.com/relvao/)

@@ -3,5 +3,5 @@ Tests
 To run the tests, run from root:
 
 ```
-expresso test/acceptance/varnish.js
+mocha --ui tdd test/acceptance/varnish.js
 ```
