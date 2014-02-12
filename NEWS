@@ -5,6 +5,7 @@ Versions 0.2.0
  - Fix EventEmitter inheritance
  - Logging is now optional: client.debug = true;
  - "ready_callback" now gets 2 params: err and clientInstance
+ - Allow preventing queue from containing duplicates
 
 Versions 0.1.1
 2012-07-10

@@ -112,6 +112,20 @@ suite('varnish', function() {
             }); 
         });
     });
+
+    test('should not send duplicate commands if asked', function(done) {
+        var server = new VarnishEmu();
+        server.on('listening', function() {
+            var queue = new varnish.VarnishQueue('127.0.0.1', server.address().port);
+            for(var i = 0; i < 5; ++i) {
+                queue.run_cmd('purge ' + (i%2), true);
+            }
+            queue.on('empty', function() {
+                assert.equal(2, server.commands);
+                done();
+            }); 
+        });
+    });
     
     test('should send commands on connect', function(done) {
         // first create queue
