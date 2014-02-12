@@ -1,5 +1,6 @@
-Versions 0.1.2
-2014-01-28
+Versions 0.2.0
+2014-MM-DD
+
  - Added support for authentication
  - Fix EventEmitter inheritance
  - Logging is now optional: client.debug = true;

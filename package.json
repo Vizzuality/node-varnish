@@ -1,6 +1,6 @@
 {
     "name": "node-varnish",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "main": "./lib/node-varnish/index.js",
     "description": "A node.js connector to Varnish using the Varnish telnet management protocol",
     "url": "https://github.com/Vizzuality/node-varnish",
