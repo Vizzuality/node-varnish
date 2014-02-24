@@ -1,8 +1,9 @@
-Versions 0.2.1
+Versions 0.3.0
 2014-MM-DD
 
  - Consistently emit Error instances on 'error' (#9)
- - Do not hide varnish connection errors
+ - Log varnish connection errors
+ - Allow passing queue and reconnection parameters via VarnishQueue ctor
 
 Versions 0.2.0
 2014-02-12
